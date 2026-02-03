@@ -1,0 +1,10 @@
+name: mi_dashboard_migracion
+title:
+username: cregueira
+account: cregueira
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 16580941
+bundleId: 11533067
+url: https://cregueira.shinyapps.io/mi_dashboard_migracion/
+version: 1

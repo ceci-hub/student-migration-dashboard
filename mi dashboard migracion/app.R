@@ -4,14 +4,35 @@
 # ==========================
 
 # ---- Packages ----
-pkgs <- c(
-  "shiny","bslib","dplyr","tidyr","stringr","readxl","ggplot2",
-  "plotly","scales","DT","tibble","tidyselect","readr","leaflet","maps","RColorBrewer"
-)
-inst <- setdiff(pkgs, rownames(installed.packages()))
-if (length(inst)) install.packages(inst, dependencies = TRUE)
-invisible(lapply(pkgs, library, character.only = TRUE))
+#pkgs <- c(
+#  "shiny","bslib","dplyr","tidyr","stringr","readxl","ggplot2",
+#  "plotly","scales","DT","tibble","tidyselect","readr","leaflet","maps","RColorBrewer"
+#)
+#inst <- setdiff(pkgs, rownames(installed.packages()))
+#if (length(inst)) install.packages(inst, dependencies = TRUE)
+#invisible(lapply(pkgs, library, character.only = TRUE))
 
+pkgs <- c("shiny","bslib","dplyr","tidyr","stringr","readxl","ggplot2",
+          "plotly","scales","DT","tibble","tidyselect","readr","leaflet","maps","RColorBrewer")
+
+
+# ---- Packages (explicit, so rsconnect detects dependencies) ----
+library(shiny)
+library(bslib)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(readxl)
+library(ggplot2)
+library(plotly)
+library(scales)
+library(DT)
+library(tibble)
+library(tidyselect)
+library(readr)
+library(leaflet)
+library(maps)
+library(RColorBrewer)
 # ============================================================
 # 0) DATA (safe loading; never stop at global)
 # ============================================================
